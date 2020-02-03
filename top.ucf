@@ -1,0 +1,10 @@
+CONFIG VCCAUX = "3.3" ;
+
+# Mimas V2
+NET "i_clock_100mhz"            LOC = V10     | IOSTANDARD = LVCMOS33 | PERIOD = 100MHz ;
+NET "o_led"                     LOC = T18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;  #D8
+NET "i_reset_n"                 LOC = K18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW6
+
+NET "s_clken" TNM_NET = FFS "g_clken";
+#TIMESPEC ts_clken = FROM "g_clken" TO "g_clken" WHAT_GOES_HERE * 2;    
+TIMESPEC ts_clken = FROM "g_clken" TO "g_clken" TS_dcm_dcm_sp_inst_clkfx* 2;    

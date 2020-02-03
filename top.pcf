@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Feb 03 16:13:59 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "o_led" LOCATE = SITE "T18" LEVEL 1;
+COMP "i_clock_100mhz" LOCATE = SITE "V10" LEVEL 1;
+COMP "i_reset_n" LOCATE = SITE "K18" LEVEL 1;
+TIMEGRP g_clken = BEL "s_clken" BEL "s_counter_0" BEL "s_counter_1" BEL
+        "s_counter_2" BEL "s_counter_3" BEL "s_counter_4" BEL "s_counter_5"
+        BEL "s_counter_6" BEL "s_counter_7" BEL "s_counter_8" BEL
+        "s_counter_9" BEL "s_counter_10" BEL "s_counter_11" BEL "s_counter_12"
+        BEL "s_counter_13" BEL "s_counter_14" BEL "s_counter_15" BEL
+        "s_counter_16" BEL "s_counter_17" BEL "s_counter_18" BEL
+        "s_counter_19" BEL "s_counter_20" BEL "s_counter_21" BEL
+        "s_counter_22" BEL "s_counter_25" BEL "s_counter_23" BEL
+        "s_counter_24" BEL "s_clken_1";
+NET "dcm/clkin1" PERIOD = 10 ns HIGH 50%;
+SCHEMATIC END;
+

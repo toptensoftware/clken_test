@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="3" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC ts_clken = FROM &quot;g_clken&quot; TO &quot;g_clken&quot; TS_dcm_dcm_sp_inst_clkfx* 2;&gt; [top.ucf(10)]</arg>: This constraint will be ignored because the relative clock constraint named &apos;<arg fmt="%s" index="2">TS_dcm_dcm_sp_inst_clkfx</arg>&apos; was not found.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD = 100MHz ;&gt; [top.ucf(4)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+</messages>
+
